@@ -1,51 +1,70 @@
 .content {
-    width:50%;
+    width:40%;
     margin:auto;
 }
 
 .parentDiv {
     outline:5px solid blue;
+    position: relative;
+    top:20px;
+    left:20px;
 }
-.parentDiv .childOne {
+.childOne {
     background-color: aliceblue;
 }
-.parentDiv .childTwo {
+.childTwo {
     background-color: antiquewhite;
 }
-.parentDiv .childThree{
+.childThree{
     background-color: beige;
 }
-.parentDiv .childFour{
+.childFour{
     background-color:burlywood;
 }
-.parentDiv .childFive{
+.childFive{
     background-color:rgb(156, 240, 239);
-    display: inline
 }
-.parentDiv .childSix{
+.childSix{
     background-color:darkgrey
 }
-.parentDiv .childSeven{
+.childSeven{
     background-color:honeydew;
+}
+.childEight{
+    background-color:cornflowerblue;
+}
+.childNine{
+    background-color:dodgerblue;
+}
+.childTen{
+    background-color:moccasin;
+}
+.childEleven{
+    background-color:floralwhite;
+}
+
+
+
+
+.parentDiv .childFive{
+    display: inline
+}
+.parentDiv .childSeven{
     height:90px
 }
 .parentDiv .childEight{
-    background-color:cornflowerblue;
     height:90px;
     display: inline;
 }
 .parentDiv .childNine{
-    background-color:dodgerblue;
     height:90px;
     display: inline-block;
 }
 .parentDiv .childTen{
-    background-color:moccasin;
     width:50%;
     display: inline-block;
 }
 .parentDiv .childEleven{
-    background-color:floralwhite;
     width:50%;
     display: block;
 }
@@ -61,47 +80,22 @@
     outline:5px solid purple;
     position: relative;
 }
-.parentDivPosition .childOne {
-    background-color: aliceblue;
-}
-.parentDivPosition .childTwo {
-    background-color: antiquewhite;
-}
 .parentDivPosition .childThree{
-    background-color: beige;
     position:relative;
     top:10px;
     left:10px;
 }
 .parentDivPosition .childFour{
-    background-color:burlywood;
     position:relative;
     height:30px;
 }
 .parentDivPosition .childFive{
-    background-color:rgb(156, 240, 239);
     position:absolute;
     top:0;
     width:100%;
 }
-.parentDivPosition .childSix{
-    background-color:darkgrey
-}
-.parentDivPosition .childSeven{
-    background-color:honeydew;
-}
-.parentDivPosition .childEight{
-    background-color:cornflowerblue;
-}
 .parentDivPosition .childNine{
-    background-color:dodgerblue;
     margin-top:10px;
-}
-.parentDivPosition .childTen{
-    background-color:moccasin;
-}
-.parentDivPosition .childEleven{
-    background-color:floralwhite;
 }
 
 
@@ -113,23 +107,11 @@
     align-items: center;
 }
 .parentDivFlexOne .childOne {
-    background-color: aliceblue;
     height:20px;
 }
 .parentDivFlexOne .childTwo {
-    background-color: antiquewhite;
     height:30px;
 }
-.parentDivFlexOne .childThree{
-    background-color: rgb(166, 166, 118);
-}
-.parentDivFlexOne .childFour{
-    background-color:burlywood;
-}
-.parentDivFlexOne .childFive{
-    background-color:rgb(156, 240, 239);
-}
-
 .parentDivFlexTwo {
     outline:5px solid black;
     display:flex;
@@ -139,18 +121,5 @@
     align-items: flex-end;
 }
 .parentDivFlexTwo .childOne {
-    background-color: aliceblue;
     width:60px;
-}
-.parentDivFlexTwo .childTwo {
-    background-color: antiquewhite;
-}
-.parentDivFlexTwo .childThree{
-    background-color: rgb(166, 166, 118);
-}
-.parentDivFlexTwo .childFour{
-    background-color:burlywood;
-}
-.parentDivFlexTwo .childFive{
-    background-color:rgb(156, 240, 239);
 }
