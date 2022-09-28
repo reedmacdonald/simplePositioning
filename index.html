@@ -1,0 +1,65 @@
+<html>
+    <head>
+    <title>Notes on Positioning Divs</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="content">
+    
+        <h1>Positioning Divs from Simple to Complex</h1>
+        <p>In the following, we will look at the properties of "display": block, inline, and inline-block. Block and inline block with have adjustable heights. Inline and inline blocks will have a default width of the inner text, while block will have a default width of the parent element. Both width's will be a percentage of the parent's width if set as a percentage. Also block adds a natural line-break (interesting!)</p>
+        <div class="parentDiv">
+            <div class="childOne">div 1</div>
+            <div class="childTwo">div 2</div>
+            <div class="childThree">div 3</div>
+            <span class="childFour">A span, so display: inline by default</span>
+            <div class="childFive">Also a span</div>
+            <div class="childSix">Another div just to break things up</div>
+            <div class="childSeven">A div with some height</div>
+            <div class="childEight">An inline div with some height (height shouldn't work)</div>
+            <div>Break-up div</div>
+            <div class="childNine">An inline-block div with height</div>
+            <div>Breakup div</div>
+            <div class="childTen">An inline-block div with width of 50%</div>
+            <div class="childEleven">A regular div with width of 50%</div>
+        </div>
+
+        <p>In the following section, we will look at different "position" properties: static, relative, absolute, sticky, and fix. One thing that you may notice is that dive 5 is positioned absolutely. It is at the top of the parent div because the parent is positioned as something non-static (it is relative). It is also worth noting that though div 3 is moved, the rest of the divs behave as if div 3 is where it was (this is surprising!) I added a margin-top to div 9 though and that moved everything up.</p>
+
+        <div class="parentDivPosition">
+            <div class="childOne">div 1</div>
+            <div class="childTwo">div 2</div>
+            <div class="childThree">div 3</div>
+            <div class="childFour">div 4</div>
+            <div class="childFive">div 5</div>
+            <div class="childSix">div 6</div>
+            <div class="childSeven">div 7</div>
+            <div class="childEight">div 8</div>
+            <div class="childNine">div 9</div>
+            <div class="childTen">div 10</div>
+            <div class="childEleven">div 11</div>
+        </div>
+
+        <p>Now on to display:flex. This is it's default layout, with the main axis being horizontal, with it's flex direction being row. The most important property is justify-content. This organizes the content along the main axis (in this case, horizontal). Align-items is the opposite of justify content, and works on the other axis. This is annoying because you'd intuitively think that align-content would be the opposite of justify-content, but, unfortunately, it is not. Also, the flexbox guide on <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">csstricks</a> only goes through justify-content, align-items, align-content, and justify-self, so I'm just going to pretend those other properties like justify-self don't exist. Also, last thing, it seems like this makes all of the items inline-bloc, but if you don't do an align-items they stretch to fill their cross-axis so they look bigger.</p>
+
+        <div class="parentDivFlexOne">
+            <div class="childOne">div 1</div>
+            <div class="childTwo">div 2</div>
+            <div class="childThree">div 3</div>
+            <div class="childFour">div 4</div>
+            <div class="childFive">div 5</div>
+        </div>
+
+        <p>Now it's flex direction is column. I added a height and then did justify-content:space-between.</p>
+
+        <div class="parentDivFlexTwo">
+            <div class="childOne">div 1</div>
+            <div class="childTwo">div 2</div>
+            <div class="childThree">div 3</div>
+            <div class="childFour">div 4</div>
+            <div class="childFive">div 5</div>
+        </div>
+    </div>
+        
+    
+</html>

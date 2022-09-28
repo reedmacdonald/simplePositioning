@@ -1,0 +1,156 @@
+.content {
+    width:50%;
+    margin:auto;
+}
+
+.parentDiv {
+    outline:5px solid blue;
+}
+.parentDiv .childOne {
+    background-color: aliceblue;
+}
+.parentDiv .childTwo {
+    background-color: antiquewhite;
+}
+.parentDiv .childThree{
+    background-color: beige;
+}
+.parentDiv .childFour{
+    background-color:burlywood;
+}
+.parentDiv .childFive{
+    background-color:rgb(156, 240, 239);
+    display: inline
+}
+.parentDiv .childSix{
+    background-color:darkgrey
+}
+.parentDiv .childSeven{
+    background-color:honeydew;
+    height:90px
+}
+.parentDiv .childEight{
+    background-color:cornflowerblue;
+    height:90px;
+    display: inline;
+}
+.parentDiv .childNine{
+    background-color:dodgerblue;
+    height:90px;
+    display: inline-block;
+}
+.parentDiv .childTen{
+    background-color:moccasin;
+    width:50%;
+    display: inline-block;
+}
+.parentDiv .childEleven{
+    background-color:floralwhite;
+    width:50%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+.parentDivPosition {
+    outline:5px solid purple;
+    position: relative;
+}
+.parentDivPosition .childOne {
+    background-color: aliceblue;
+}
+.parentDivPosition .childTwo {
+    background-color: antiquewhite;
+}
+.parentDivPosition .childThree{
+    background-color: beige;
+    position:relative;
+    top:10px;
+    left:10px;
+}
+.parentDivPosition .childFour{
+    background-color:burlywood;
+    position:relative;
+    height:30px;
+}
+.parentDivPosition .childFive{
+    background-color:rgb(156, 240, 239);
+    position:absolute;
+    top:0;
+    width:100%;
+}
+.parentDivPosition .childSix{
+    background-color:darkgrey
+}
+.parentDivPosition .childSeven{
+    background-color:honeydew;
+}
+.parentDivPosition .childEight{
+    background-color:cornflowerblue;
+}
+.parentDivPosition .childNine{
+    background-color:dodgerblue;
+    margin-top:10px;
+}
+.parentDivPosition .childTen{
+    background-color:moccasin;
+}
+.parentDivPosition .childEleven{
+    background-color:floralwhite;
+}
+
+
+.parentDivFlexOne {
+    outline:5px solid gold;
+    display:flex;
+    justify-content: space-evenly;
+    height:70px;
+    align-items: center;
+}
+.parentDivFlexOne .childOne {
+    background-color: aliceblue;
+    height:20px;
+}
+.parentDivFlexOne .childTwo {
+    background-color: antiquewhite;
+    height:30px;
+}
+.parentDivFlexOne .childThree{
+    background-color: rgb(166, 166, 118);
+}
+.parentDivFlexOne .childFour{
+    background-color:burlywood;
+}
+.parentDivFlexOne .childFive{
+    background-color:rgb(156, 240, 239);
+}
+
+.parentDivFlexTwo {
+    outline:5px solid black;
+    display:flex;
+    flex-direction: column;
+    height:300px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.parentDivFlexTwo .childOne {
+    background-color: aliceblue;
+    width:60px;
+}
+.parentDivFlexTwo .childTwo {
+    background-color: antiquewhite;
+}
+.parentDivFlexTwo .childThree{
+    background-color: rgb(166, 166, 118);
+}
+.parentDivFlexTwo .childFour{
+    background-color:burlywood;
+}
+.parentDivFlexTwo .childFive{
+    background-color:rgb(156, 240, 239);
+}
